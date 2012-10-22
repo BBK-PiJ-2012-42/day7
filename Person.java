@@ -6,20 +6,21 @@ public class Person {
     //private HospitalManager PersonManager;
             
     private String name;
-    private int age;
+    //private int age;
     //private String illness;
     private Person prevPerson;
-    private Person nextPerson;
+    public Person nextPerson;
     
-    public Person(String name, int age) {
+    public Person(String name) {
         this.name = name;
-        this.age = age;
+        //this.age = age;
         //this.illness = illness;
         this.prevPerson = null;
         this.nextPerson = null;
         // Link to HospitalMnager Object.
         //this.PersonManager = manager;
     }
+    
     
     // Method to allow setting of prevPerson
     public void setPrevious(Person oldPerson) {
@@ -64,7 +65,7 @@ public class Person {
 //    }
     
     public void printPerson() {
-        System.out.println(name+"\t"+age);
+        System.out.println(name);
     }
     
     public void forwardPrint() {
