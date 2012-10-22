@@ -10,11 +10,13 @@ public interface SimpleMap {
     * If the key is already in the map, nothing is done.
     */
     String put(int key, String name);
+    
     /**
     * Returns the name associated with that key,
     * or null if there is none.
     */
     String get(int key);
+    
     /**
     * Removes a name from the map. Future calls to get(key)
     * will return null for this key unless another
@@ -22,6 +24,7 @@ public interface SimpleMap {
     2
     */
     void remove(int key);
+    
     /**
     * Returns true if there are no workers in the map,
     * false otherwise
